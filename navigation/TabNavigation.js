@@ -2,10 +2,10 @@ import React from "react";
 import { View, Platform, Image } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import Home from "../screens/Home";
-import Search from "../screens/Search";
-import Notifications from "../screens/Notifications";
-import Profile from "../screens/Profile";
+import Home from "../screens/Tabs/Home";
+import Search from "../screens/Tabs/Search";
+import Notifications from "../screens/Tabs/Notifications";
+import Profile from "../screens/Tabs/Profile";
 import MessagesLink from "../components/MessagesLink";
 import NavIcon from "../components/NavIcon";
 import { stackStyles } from "./config";
@@ -71,7 +71,11 @@ export default () => {
         })}
         options={{
           tabBarIcon: ({ focused }) => (
-            <NavIcon focused={focused} name={Platform.OS === "ios" ? "ios-add" : "md-add"} />
+            <NavIcon
+              focused={focused}
+              size={32}
+              name={Platform.OS === "ios" ? "ios-add-circle-outline" : "md-add-circle-outline"}
+            />
           ),
         }}
       />
