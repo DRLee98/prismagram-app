@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46175983-7946-4013-93eb-b14d6a73cb53" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AuthQueries.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/components/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SearchBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/navigation/TabNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/TabNavigation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/Tabs/Search.js" beforeDir="false" />
