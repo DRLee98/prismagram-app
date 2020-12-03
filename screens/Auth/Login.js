@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { TouchableWithoutFeedback, Keyboard } from "react-native";
+import { CommonActions } from "@react-navigation/native";
 import AuthButton from "../../components/AuthButton";
 import AuthInput from "../../components/AuthInput";
 import useInput from "../../hooks/useInput";
@@ -14,10 +15,11 @@ const View = styled.View`
   flex: 1;
 `;
 
-export default ({ navigation }) => {
-  const emailInput = useInput(navigation.getParam("email", ""));
+export default ({ route, navigation }) => {
+  //const {email} = route.params
+  const emailInput = useInput("");
   const [loading, setLoading] = useState(false);
-  const requestSecretMutation = useMutation(LOG_IN, {
+  const [requestSecretMutation] = useMutation(LOG_IN, {
     variables: {
       email: emailInput.value,
     },

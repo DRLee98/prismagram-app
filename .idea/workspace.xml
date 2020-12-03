@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46175983-7946-4013-93eb-b14d6a73cb53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SearchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation/TabNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/TabNavigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/Tabs/Search.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +49,10 @@
       <screen x="1920" y="78" width="1920" height="1040" />
     </state>
     <state x="2601" y="382" key="#com.intellij.fileTypes.FileTypeChooser/1920.78.1920.1040/0.0.1920.1040@1920.78.1920.1040" timestamp="1606616624532" />
-    <state x="2257" y="182" width="1200" height="800" key="AVDManager" timestamp="1606639295264">
+    <state x="2257" y="182" width="1200" height="800" key="AVDManager" timestamp="1606995141031">
       <screen x="1920" y="78" width="1920" height="1040" />
     </state>
-    <state x="2257" y="182" width="1200" height="800" key="AVDManager/1920.78.1920.1040/0.0.1920.1040@1920.78.1920.1040" timestamp="1606639295264" />
+    <state x="2257" y="182" width="1200" height="800" key="AVDManager/1920.78.1920.1040/0.0.1920.1040@1920.78.1920.1040" timestamp="1606995141031" />
     <state x="2637" y="336" key="FileChooserDialogImpl" timestamp="1606617964437">
       <screen x="1920" y="78" width="1920" height="1040" />
     </state>

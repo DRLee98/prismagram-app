@@ -6,17 +6,20 @@ import Home from "../screens/Tabs/Home";
 import Search from "../screens/Tabs/Search";
 import Notifications from "../screens/Tabs/Notifications";
 import Profile from "../screens/Tabs/Profile";
+import Detail from "../screens/Detail";
 import MessagesLink from "../components/MessagesLink";
 import NavIcon from "../components/NavIcon";
 import { stackStyles } from "./config";
+import styles from "../styles";
 
 const Tab = createBottomTabNavigator();
 
 const Stack = createStackNavigator();
 
 const stackFactory = (name, initialRoute, customConfig) => (
-  <Stack.Navigator>
-    <Stack.Screen name={name} component={initialRoute} options={{ ...customConfig, headerStyle: { ...stackStyles } }} />
+  <Stack.Navigator screenOptions={{ headerStyle: { ...stackStyles } }}>
+    <Stack.Screen name={name} component={initialRoute} options={{ ...customConfig }} />
+    <Stack.Screen name="Detail" component={Detail} options={{ title: "Photo", headerTintColor: styles.blackColor }} />
   </Stack.Navigator>
 );
 
@@ -42,23 +45,22 @@ export default () => {
           stackFactory("Home", Home, {
             title: "Home",
             headerRight: () => <MessagesLink />,
-            headerTitle: () => <Image src={require("../assets/logo.png")} />,
+            headerTitle: () => (
+              <Image style={{ width: 140 }} resizeMode="contain" source={require("../assets/logo.png")} />
+            ),
           })
         }
       </Tab.Screen>
       <Tab.Screen
         name="Search"
         options={{
+          headerBackTitle: () => null,
           tabBarIcon: ({ focused }) => (
             <NavIcon focused={focused} name={Platform.OS === "ios" ? "ios-search" : "md-search"} />
           ),
         }}
       >
-        {() =>
-          stackFactory("Search", Search, {
-            title: "Search",
-          })
-        }
+        {() => stackFactory("Search", Search)}
       </Tab.Screen>
       <Tab.Screen
         name="Add"

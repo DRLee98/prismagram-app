@@ -15,14 +15,15 @@ const View = styled.View`
   flex: 1;
 `;
 
-export default ({ navigation }) => {
+export default ({ route, navigation }) => {
   const confirmInput = useInput("");
   const logIn = useLogIn();
   const [loading, setLoading] = useState(false);
-  const confirmSecretMutation = useMutation(CONFIRM_SECRET, {
+  const { email } = route.params;
+  const [confirmSecretMutation] = useMutation(CONFIRM_SECRET, {
     variables: {
       secret: confirmInput.value,
-      email: navigation.getParam("email"),
+      email,
     },
   });
   const handleConfirm = async () => {

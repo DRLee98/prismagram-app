@@ -28,10 +28,12 @@ const GoogleContainer = styled.View`
   margin-top: 20px;
 `;
 
-export default ({ navigation }) => {
+export default ({ route, navigation }) => {
+  //const {email} = route.params
+  console.log(route.params);
   const fNameInput = useInput("");
   const lNameInput = useInput("");
-  const emailInput = useInput(navigation.getParam("email", ""));
+  const emailInput = useInput("");
   const usernameInput = useInput("");
   const [loading, setLoading] = useState(false);
   const createAccountMutation = useMutation(CREATE_ACCOUNT, {
