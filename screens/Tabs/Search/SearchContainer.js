@@ -13,7 +13,7 @@ export default ({ navigation }) => {
     setShouldFetch(true);
   };
   navigation.setOptions({
-    headerTitle: () => <SearchBar value={term} onChange={(onChange, () => null)} onSubmit={(onSubmit, () => null)} />,
+    headerTitle: () => <SearchBar value={term} onChange={onChange} onSubmit={onSubmit} />,
   });
   return <SearchPresenter term={term} shouldFetch={shouldFetch} />;
 };

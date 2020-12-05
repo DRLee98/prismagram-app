@@ -6,7 +6,7 @@ import Post from "../../components/Post";
 import Loader from "../../components/Loader";
 import { POST_FRAGMENT } from "../../fragments";
 
-const FEED_QUERY = gql`
+export const FEED_QUERY = gql`
   {
     seeFeed {
       ...PostParts

@@ -83,19 +83,19 @@ const UserProfile = ({ avatar, postsCount, followersCount, followingCount, bio, 
         <Bio>{bio}</Bio>
       </ProfileMeta>
       <ButtonContainer>
-        <TouchableOpacity onPress={setIsGrid(true)}>
+        <TouchableOpacity onPress={() => setIsGrid(true)}>
           <Button>
             <Ionicons
-              color={isGrid ? styles.black : styles.darkGreyColor}
+              color={isGrid ? styles.blackColor : styles.darkGreyColor}
               size={32}
               name={Platform.OS === "ios" ? "ios-grid" : "md-grid"}
             />
           </Button>
         </TouchableOpacity>
-        <TouchableOpacity onPress={setIsGrid(false)}>
+        <TouchableOpacity onPress={() => setIsGrid(false)}>
           <Button>
             <Ionicons
-              color={!isGrid ? styles.black : styles.darkGreyColor}
+              color={!isGrid ? styles.blackColor : styles.darkGreyColor}
               size={32}
               name={Platform.OS === "ios" ? "ios-list" : "md-list"}
             />

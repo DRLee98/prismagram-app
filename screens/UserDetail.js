@@ -15,9 +15,9 @@ const GET_USER = gql`
   ${USER_FRAGMENT}
 `;
 
-export default ({ navigation }) => {
+export default ({ route }) => {
   const { loading, data } = useQuery(GET_USER, {
-    variables: { username: navigation.getParam("username") },
+    variables: { username: route.params.username },
   });
   return <ScrollView>{loading ? <Loader /> : data && data.seeUser && <UserProfile {...data.seeUser} />}</ScrollView>;
 };

@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46175983-7946-4013-93eb-b14d6a73cb53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AuthQueries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SearchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation/TabNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/TabNavigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/Tabs/Search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apollo.js" beforeDir="false" afterPath="$PROJECT_DIR$/apollo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UserProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation/PhotoNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/PhotoNavigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/Photo/SelectPhoto.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Photo/SelectPhoto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/Photo/TakePhoto.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Photo/TakePhoto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/Photo/UploadPhoto.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Photo/UploadPhoto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/Tabs/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Tabs/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/Tabs/Search/SearchContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Tabs/Search/SearchContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/UserDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/UserDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,17 +57,17 @@
       <screen x="1920" y="78" width="1920" height="1040" />
     </state>
     <state x="2601" y="382" key="#com.intellij.fileTypes.FileTypeChooser/1920.78.1920.1040/0.0.1920.1040@1920.78.1920.1040" timestamp="1606616624532" />
-    <state x="2257" y="182" width="1200" height="800" key="AVDManager" timestamp="1606995141031">
+    <state x="2278" y="115" width="1200" height="800" key="AVDManager" timestamp="1607130000046">
       <screen x="1920" y="78" width="1920" height="1040" />
     </state>
-    <state x="2257" y="182" width="1200" height="800" key="AVDManager/1920.78.1920.1040/0.0.1920.1040@1920.78.1920.1040" timestamp="1606995141031" />
+    <state x="2278" y="115" width="1200" height="800" key="AVDManager/1920.78.1920.1040/0.0.1920.1040@1920.78.1920.1040" timestamp="1607130000046" />
     <state x="2637" y="336" key="FileChooserDialogImpl" timestamp="1606617964437">
       <screen x="1920" y="78" width="1920" height="1040" />
     </state>
     <state x="2637" y="336" key="FileChooserDialogImpl/1920.78.1920.1040/0.0.1920.1040@1920.78.1920.1040" timestamp="1606617964437" />
-    <state x="2513" y="273" key="run.anything.popup" timestamp="1606617961896">
+    <state x="2513" y="273" key="run.anything.popup" timestamp="1607127110300">
       <screen x="1920" y="78" width="1920" height="1040" />
     </state>
-    <state x="2513" y="273" key="run.anything.popup/1920.78.1920.1040/0.0.1920.1040@1920.78.1920.1040" timestamp="1606617961896" />
+    <state x="2513" y="273" key="run.anything.popup/1920.78.1920.1040/0.0.1920.1040@1920.78.1920.1040" timestamp="1607127110300" />
   </component>
 </project>
